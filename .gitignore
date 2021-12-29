@@ -127,3 +127,17 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# model file
+model/
+
+object_detection/wandb/
+object_detection/runs/
+runs/
+wandb/
+*.pt
+checkpoint/
+*.csv
+*.ipynb_checkpoints
+*.pyc
+*/__pycache__/
