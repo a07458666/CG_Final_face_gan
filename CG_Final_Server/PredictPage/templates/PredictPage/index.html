@@ -1,0 +1,26 @@
+{% load static %}
+{% csrf_token %}
+<title>Title</title>
+<div>
+	<div  align="center" style="margin-bottom:15px">
+		<h1>Title</h1>
+	</div>
+	<div align="center" style="margin-bottom:15px">
+        <div style='display:inline; margin-right:15px;'>
+            <img id="image_preview" src="https://via.placeholder.com/200x200/efefef?text=Source" alt="image-placehoder" width="600px" height="600px">
+        </div>
+		
+		<div style='display:inline; margin-left:15px;'>
+            <img id="image_result" src="https://via.placeholder.com/200x200/efefef?text=Result" alt="image-placehoder" width="600px" height="600px">
+        </div>
+	</div>
+	<div align="center">
+		<input type="file" id="image_uploader" accept=".jpg, .jpeg"/>
+		<select name="models" id="models">
+		  <option value="0">Avatar</option>
+		</select>
+		<button type="button" id="upload_button">convert</button>
+	</div>
+</div>
+
+<script src="{% static './PredictPage/js/index_page.js' %}"></script>
