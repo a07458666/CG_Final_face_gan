@@ -67,10 +67,6 @@ if __name__ == '__main__':
     for i, data in enumerate(dataset):
         if i >= opt.num_test:  # only apply our model to opt.num_test images.
             break
-        print(data)
-        print(data['A'].size())
-        print(data['B'].size())
-        break
         model.set_input(data)  # unpack data from data loader
         model.test()           # run inference
         visuals = model.get_current_visuals()  # get image results
@@ -79,4 +75,4 @@ if __name__ == '__main__':
             print('processing (%04d)-th image... %s' % (i, img_path))
         save_images(webpage, visuals, img_path, aspect_ratio=opt.aspect_ratio, width=opt.display_winsize, use_wandb=opt.use_wandb)
     webpage.save()  # save the HTML
-    torch.save(model, "ho.pth.tar")
+    torch.save(model, "./convertModel/{}.pth.tar".format(opt.name))
