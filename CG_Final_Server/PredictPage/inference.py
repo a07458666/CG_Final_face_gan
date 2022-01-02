@@ -2,12 +2,11 @@ import torch
 import cv2
 import torchvision.transforms as transforms
 import numpy as np
-
+from PIL import Image
 
 def converFace(model, image):
     transform = transforms.Compose([
-        transforms.ToPILImage(),
-        transforms.Resize((256, 256)),
+        transforms.Resize((256, 256), Image.BICUBIC),
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
