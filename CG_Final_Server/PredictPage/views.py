@@ -13,7 +13,7 @@ from .wing import align_face
 
 # init models
 model_dir = './PredictPage/models/'
-model_name_list = ['Female2Avatar.tar']
+model_name_list = ['Female2Avatar.tar', '2Fire.tar', '2MB.tar', '2Werewolf.tar']
 model_list = [torch.load(model_dir + model_name) for model_name in model_name_list]
 for model in model_list:
 	model.eval()

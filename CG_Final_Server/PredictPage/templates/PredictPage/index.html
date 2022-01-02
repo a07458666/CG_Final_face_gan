@@ -1,9 +1,13 @@
 {% load static %}
 {% csrf_token %}
-<title>Title</title>
+<title>
+	Special effects makeup
+</title>
 <div>
 	<div  align="center" style="margin-bottom:15px">
-		<h1>Title</h1>
+		<h1>
+			Special effects makeup
+		</h1>
 	</div>
 	<div align="center" style="margin-bottom:15px">
         <div style='display:inline; margin-right:15px;'>
@@ -17,7 +21,10 @@
 	<div align="center">
 		<input type="file" id="image_uploader" accept=".jpg, .jpeg"/>
 		<select name="models" id="models">
-		  <option value="0">Female2Avatar</option>
+		  <option value="0">Avatar</option>
+		  <option value="1">Fireman</option>
+		  <option value="2">Mr'bean</option>
+		  <option value="3">Werewolf</option>
 		</select>
 		<button type="button" id="upload_button">convert</button>
 	</div>
