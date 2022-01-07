@@ -13,7 +13,9 @@ conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
 <h3>Run Server</h3>
+
 change directory to **CG_Final_Server** folder, then run following command
+
 ``` shell
 python .\manage.py runserver
 ``` 
