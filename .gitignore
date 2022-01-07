@@ -130,7 +130,9 @@ dmypy.json
 
 # model file
 model/
-models/
+*.tar
+*.npz
+*.ckpt
 
 object_detection/wandb/
 object_detection/runs/
