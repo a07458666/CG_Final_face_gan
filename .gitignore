@@ -130,6 +130,7 @@ dmypy.json
 
 # model file
 model/
+models/
 
 object_detection/wandb/
 object_detection/runs/
