@@ -15,11 +15,11 @@ conda install pytorch torchvision torchaudio cpuonly -c pytorch
 <h3>Download Models</h3>
 
 Download models from <a href="https://drive.google.com/drive/folders/1EbizvJtzX5zqOnCxKxSt1X_ROk19hgSL?usp=sharing">here</a><br>
-You need put them into **CG_Final_Server/PredictPage/models/**
+You need put them into **CG_Final_face_gan/CG_Final_Server/PredictPage/models/**
 
 <h3>Run Server</h3>
 
-Change directory to **CG_Final_Server** folder, then run following command
+Change directory to **CG_Final_face_gan/CG_Final_Server** folder, then run following command
 
 ``` shell
 python .\manage.py runserver
